@@ -9,7 +9,7 @@ Added direct API calls.
 Hide default request method.
 
 ```javascript
-var Teamleader = require('teamleader');
+var Teamleader = require('teamleader-api');
 
 var client = new Teamleader({
   group: '',
