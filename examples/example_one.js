@@ -48,8 +48,14 @@ var tl = new TeamLeader({
 // });
 
 
-//29494
-//
+tl.getCustomFields({
+  "for": 'todo'
+}).then (function (result) {
+  console.log('getCustomFieldInfos', result);
+}).catch (function (err) {
+  console.log(err);
+});
+
 tl.getCustomFieldInfo({
   custom_field_id: process.env.KANBAN_CF_ID
 }).then (function (result) {
