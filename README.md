@@ -20,7 +20,7 @@ client.post(
   'getContacts', 
   {
     amount: 100,
-    pageno: 1
+    pageno: 0
   },
   function(error, contacts, response){
     if (!error) {
@@ -31,7 +31,7 @@ client.post(
 
 client.getContacts({
     amount: 100,
-    pageno: 1
+    pageno: 0
   },
   function(error, contacts, response){
     if (!error) {
@@ -42,7 +42,7 @@ client.getContacts({
 
 client.getContacts({
     amount: 100,
-    pageno: 1
+    pageno: 0
   }).then(function(contacts){
       console.log(contacts);
   }, function(error){
