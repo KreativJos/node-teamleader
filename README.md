@@ -53,7 +53,7 @@ client.getContacts({
 
 ## Installation
 
-`npm install teamleader`
+`npm install teamleader-api`
 
 ## Usage
 
