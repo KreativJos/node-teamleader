@@ -2,6 +2,12 @@
 
 An client library for the [Teamleader API](http://apidocs.teamleader.be/).
 
+Based on [tijsverkoyen - Teamleader API](https://github.com/tijsverkoyen/node-teamleader)
+
+Added Promise support.
+Added direct API calls.
+Hide default request method.
+
 ```javascript
 var Teamleader = require('teamleader');
 
@@ -20,6 +26,27 @@ client.post(
     if (!error) {
       console.log(contacts);
     }
+  }
+);
+
+client.getContacts({
+    amount: 100,
+    pageno: 1
+  },
+  function(error, contacts, response){
+    if (!error) {
+      console.log(contacts);
+    }
+  }
+);
+
+client.getContacts({
+    amount: 100,
+    pageno: 1
+  }).then(function(contacts){
+      console.log(contacts);
+  }, function(error){
+      console.log(error);
   }
 );
 ```
