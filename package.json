@@ -1,6 +1,6 @@
 {
   "name": "teamleader-api",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "API client for Teamleader",
   "main": "./lib/teamleader",
   "scripts": {
